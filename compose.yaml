@@ -1,0 +1,13 @@
+services:
+  bot:
+    build: .
+    restart: unless-stopped
+    init: true
+    env_file: .env
+    volumes:
+      - ./config:/app/config:ro
+      - sole-data:/app/data
+    stop_grace_period: 30s
+
+volumes:
+  sole-data:

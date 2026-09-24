@@ -1,0 +1,63 @@
+{
+  "appearance": { "name": "SOLE", "accentColor": "#8B9EFF", "errorColor": "#ED6A79" },
+  "defaults": {
+    "timezone": "Asia/Seoul",
+    "managerRoleIds": [],
+    "logChannelId": "",
+    "welcome": {
+      "enabled": false,
+      "channelId": "",
+      "title": "{server}에 오신 것을 환영합니다!",
+      "body": "{user}님, 반가워요.\n현재 **{memberCount}명**이 함께하고 있어요.",
+      "imageUrl": "",
+      "autoRoleIds": []
+    },
+    "tickets": {
+      "enabled": false,
+      "categoryId": "",
+      "supportRoleIds": [],
+      "channelName": "ticket-{username}-{number}",
+      "panelTitle": "도움이 필요하신가요?",
+      "panelBody": "아래 버튼을 눌러 문의를 남겨 주세요. 담당자와 본인만 볼 수 있는 채널이 생성됩니다.",
+      "openLabel": "문의하기",
+      "intro": "{user}님, 문의 내용을 남겨 주세요. 담당자가 확인 후 안내해 드리겠습니다.",
+      "maxOpenPerUser": 1,
+      "closeDeletesChannel": false
+    },
+    "tts": {
+      "enabled": false,
+      "textChannelIds": [],
+      "allowedRoleIds": [],
+      "languageCode": "ko-KR",
+      "voiceName": "ko-KR-Standard-A",
+      "speakingRate": 1,
+      "maxCharacters": 300,
+      "maxQueueSize": 20,
+      "cooldownSeconds": 3,
+      "idleDisconnectSeconds": 300,
+      "readAuthorName": true
+    },
+    "moderation": {
+      "enabled": false,
+      "triggerChannelIds": [],
+      "includeChildThreads": true,
+      "exemptRoleIds": [],
+      "exemptUserIds": [],
+      "exemptAdministrators": true,
+      "reason": "금지 채널에 메시지 전송",
+      "deleteMessageSeconds": 604800,
+      "scanHistory": true,
+      "includeArchivedThreads": true,
+      "pageDelayMs": 250
+    },
+    "schedules": {
+      "enabled": true,
+      "allowedChannelIds": [],
+      "maxPendingPerGuild": 100,
+      "pollIntervalSeconds": 10,
+      "maxAttempts": 3,
+      "retryDelaySeconds": 60
+    }
+  },
+  "guilds": {}
+}

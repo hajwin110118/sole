@@ -1,0 +1,33 @@
+{
+  "name": "sole-discord-bot",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "설정 중심의 Discord Components V2 커뮤니티 봇",
+  "engines": {
+    "node": ">=22.16.0"
+  },
+  "scripts": {
+    "dev": "node --import tsx --watch src/index.ts",
+    "build": "tsc -p tsconfig.json",
+    "start": "node dist/index.js",
+    "deploy": "node --import tsx src/deploy.ts",
+    "check": "tsc --noEmit",
+    "test": "node --import tsx --test tests/*.test.ts",
+    "validate": "node --import tsx src/validate.ts"
+  },
+  "dependencies": {
+    "@discordjs/voice": "^0.19.2",
+    "discord.js": "^14.27.0",
+    "dotenv": "^18.0.3",
+    "luxon": "^3.7.2",
+    "opusscript": "^0.0.8",
+    "zod": "^4.6.5"
+  },
+  "devDependencies": {
+    "@types/luxon": "^3.7.5",
+    "@types/node": "^22.20.4",
+    "tsx": "^4.23.15",
+    "typescript": "^5.9.3"
+  }
+}
