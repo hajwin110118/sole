@@ -1,5 +1,8 @@
 # SOLE · Discord 커뮤니티 봇
 
+> 이 프로젝트는 crew console korea에서 폐기된 프로젝트입니다.
+> 추후 이 서비스가 비공개 될 수 있으며, 공개된 소스에 한해 라이선스를 주장하지 않습니다.
+
 discord.js 14 + TypeScript + Discord Components V2로 구현한 봇입니다. `/command`에서 버튼으로 기능을 이용하고, 슬래시 명령어와 모달로 입력합니다. 티켓, 예약, 메시지 정리 진행 상태는 SQLite에 저장합니다.
 
 ## 시작하기
